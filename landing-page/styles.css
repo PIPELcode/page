@@ -1,0 +1,58 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --background: #2e2c2f;
+    --primary: #475b63;
+    --secondary: #f3e8ee;
+    --text-gray: #adb9c7;
+    --text-white: #f3f4f6;
+    --text-black: #1f2937;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+header {
+    background-color: var(--secondary);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 30px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    height: 95%
+}
+
+.nav,
+.navbar-list {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.nav {
+    gap: 150px;
+}
+
+.navbar-list {
+    gap: 30px;
+}
+
+.navbar-list a {
+    font-weight: 600;
+    color: var(--text-black);
+}
+
