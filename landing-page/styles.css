@@ -5,7 +5,7 @@
     --background: #2e2c2f;
     --primary: #475b63;
     --secondary: #f3e8ee;
-    --text-gray: #adb9c7;
+    --text-gray: #7e858d;
     --text-white: #f3f4f6;
     --text-black: #1f2937;
 }
@@ -19,40 +19,161 @@
     list-style-type: none;
 }
 
-header {
-    background-color: var(--secondary);
+/*Header*/
+
+.header {
+    background-color: var(--background);
+    height: 80px;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    height: 80px;
-    padding: 0 30px;
     position: fixed;
+    align-items: center;
+    padding: 0 50px;
     top: 0;
     z-index: 10;
 }
 
-.logo {
-    height: 95%
+.header img {
+    height: 85%;
 }
 
-.nav,
-.navbar-list {
+/* Navbar */
+.navbar ul {
     display: flex;
+    list-style: none;
+    gap: 100px;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+/* Main */
+.main {
+    background-color: var(--secondary);
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
+    color: var(--text-white);
+    width: 100%;
+}
+/* Hero */
+.hero {
+    margin-top: 60px;
+    padding: 70px 0px;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    flex-direction: row;
+}
+/* Content H1 y P */
+.hero-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center; 
+    width: 100%;
+    text-align: left;
+    padding-right: 40px;
 }
 
-.nav {
-    gap: 150px;
-}
-
-.navbar-list {
-    gap: 30px;
-}
-
-.navbar-list a {
+.hero-content h1 {
+    font-size: 50px; 
     font-weight: 600;
+    max-width: 700px; 
     color: var(--text-black);
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 25px;
+    font-weight: 400;
+    max-width: 650px;
+    color: var(--text-gray);
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.hero-image img {
+    width: 85%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 30px; 
+    object-fit: cover;
+}
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.hero-buttons a {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Botón oscuro */
+.button-es {
+    background-color: transparent;
+    color: var(--background);
+    border: 2px solid var(--background);
+}
+.button-es:hover {
+    background-color: var(--background);
+    color: var(--secondary);
+}
+/*Botón claro*/
+.button-more {
+    background-color: transparent;
+    color: var(--background);
+    border: 2px solid var(--background);
+}
+.button-more:hover {
+    background-color: var(--background);
+    color: var(--secondary);
+}
+/*le añadi animaciones con :hover a c/uno de los botones*/
+
+/*text*/
+
+.more {
+    background-color: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-white);
+    width: 100%;
+    /*aca hice un separador*/
+    border-top: 1px solid var(--background);
+    margin-top: 25px;
+    padding-top: 25px;
+  
+}
+.text {
+    max-width: 1200px;
+    padding: 50px 20px;
+    text-align: center;
+    color: var(--text-gray);
+    font-size: 20px;
 }
 
